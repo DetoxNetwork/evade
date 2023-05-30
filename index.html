@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Evade - Detox Network</title>
+  <link rel="icon" type="image/x-icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<code id="navbar"></code>
+<script src="https://new-navbar.detoxnetwork.repl.co/index.min.js"></script>
+<script src="script.js"></script>
+
+<body>
+
+  <div class="row"></div>
+  <div class="column" id="left">
+
+    <div class="center" id="searchEngine">
+      <div class="dropdown">
+        <button class="dropbtn">Bad Search Engine</button>
+        <div class="dropdown-content">
+          Search engine that won’t show up in your history. (Yes it's Bing, sorry.) Doesn’t work with a lot of websites,
+          so you can mostly just search.
+          <a
+            href="javascript:((function()%7Bvar a,b,c;c='https://www.bing.com/',b=document.createElement('iframe'),b.setAttribute('src',c),b.setAttribute('id','rusic-modal'),b.setAttribute('style','position: fixed; z-index: 999999; width: 100%; height: 100%; right: 0; top: 0; border: none; overflow: hidden; background-color: #fff;'),a=document.getElementsByTagName('body')%5B0%5D,a.appendChild(b)%7D)).call(this)">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Asteroids</button>
+        <div class="dropdown-content">
+          Spawns a space ship that you can control with the arrow keys or WASD. If you hit space or click, it'll shoot
+          and destroy anything on the page!
+          <a
+            href="javascript:var s=document.createElement('script');s.type='text/javascript';s.onerror=function(e){alert('Failed to load the script. The site\'s Content Security Policy might be blocking it. Feel free to try again.');};document.body.appendChild(s);s.src='https://blog.roysolberg.com/js/dom2.min.js';void(0);javascript:var s=document.createElement('script');s.type='text/javascript';s.onerror=function(e){alert('Failed to load the script. The site\'s Content Security Policy might be blocking it. Feel free to try again.');};document.body.appendChild(s);s.src='https://blog.roysolberg.com/js/dom2.min.js';void(0);">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Rename Tab</button>
+        <div class="dropdown-content">
+          Prompts you to rename the tab you're on to whatever you like. Can be useful for organization.
+          <a
+            href="javascript:void(document.title = prompt('Enter a new title for this tab:', document.title));">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Tic Tac Toe</button>
+        <div class="dropdown-content">
+          Sounds boring but can actually be pretty fun, especially the feature where whatever you select decides where
+          you move next.
+          <a
+            href="javascript: /* Randomize the first marker. */var turn=Math.random()<1/2 ? 0 : 1;/* Set unit size. */var unit=100/11;/* Create menu. */var menu=document.createElement(%27div%27);menu.style.position=%27fixed%27;menu.style.top=%2750%%27;menu.style.left=%2750%%27;menu.style.height=9*unit+%27vmin%27;menu.style.width=9*unit+%27vmin%27;menu.style.transform=%27translate(-50%,-50%)%27;menu.style.zIndex=9999;menu.innerHTML=%27<a style=\%27background:white;position:absolute;left:100%;cursor:pointer\%27 onClick=\%27menu.remove()\%27>exit</a>%27;document.body.appendChild(menu);/* Create board. */var board=document.createElement(%27div%27);board.style.background=%27rgba(255,255,255,0.9)%27;board.style.position=%27absolute%27;board.style.top=0;board.style.left=0;board.style.height=9*unit+%27vmin%27;board.style.width=9*unit+%27vmin%27;board.mark=null;menu.appendChild(board);/* Create macro and micro maps. */BOXES=[];boxes=[[],[],[],[],[],[],[],[],[]];/* Fill the board. */for(var i=0;i<3;i++){for(var j=0;j<3;j++){var BOX=document.createElement(%27div%27);BOX.style.position=%27absolute%27;BOX.style.top=i*100/3+%27%%27;BOX.style.left=j*100/3+%27%%27;BOX.style.height=100/3+%27%%27;BOX.style.width=100/3+%27%%27;BOX.mark=null;for(var k=0;k<3;k++){for(var l=0;l<3;l++){var box=document.createElement(%27div%27);box.setAttribute(%27onMouseOver%27,%27this.style.background=\%27rgba(0,0,0,0.25)\%27%27);box.setAttribute(%27onMouseOut%27,%27this.style.background=\%27transparent\%27%27);box.setAttribute(%27onClick%27,%27pick(this)%27);box.style.position=%27absolute%27;box.style.top=k*100/3+%27%%27;box.style.left=l*100/3+%27%%27;box.style.height=100/3+%27%%27;box.style.width=100/3+%27%%27;box.macro=3*i+j;box.micro=3*k+l;box.mark=null;boxes[3*i+j].push(box);if(box.macro%2==0){box.style.boxShadow=%270 0 1vmin black inset%27;}else{box.style.boxShadow=%270 0 1vmin gray inset%27;}BOX.appendChild(box);}}BOXES.push(BOX);board.appendChild(BOX);}}/*+---+---+---+| 0 | 1 | 2 |+---+---+---+| 3 | 4 | 5 |+---+---+---+| 6 | 7 | 8 |+---+---+---+*//* Check for victories. */function check(m){var checkmark=0;if(m[0].mark!=null){if((m[0].mark==m[1].mark && m[1].mark==m[2].mark) || (m[0].mark==m[3].mark && m[3].mark==m[6].mark)){checkmark=1;}}if(m[4].mark!=null){if((m[3].mark==m[4].mark && m[4].mark==m[5].mark) || (m[1].mark==m[4].mark && m[4].mark==m[7].mark) || (m[0].mark==m[4].mark && m[4].mark==m[8].mark) || (m[2].mark==m[4].mark && m[4].mark==m[6].mark)){checkmark=1;}}if(m[8].mark!=null){if((m[6].mark==m[7].mark && m[7].mark==m[8].mark) || (m[2].mark==m[5].mark && m[5].mark==m[8].mark)){checkmark=1;}}if(checkmark){marker(m[0].parentNode);}else{if(m[0].mark!=null && m[1].mark!=null && m[2].mark!=null && m[3].mark!=null && m[4].mark!=null && m[5].mark!=null && m[6].mark!=null && m[7].mark!=null && m[8].mark!=null){draw(m[0].parentNode);}}}/* Place a tied marker. */function draw(obj){/* Disable the tied box. */obj.mark=2;disable(obj);obj.style.pointerEvents=%27none%27;}/* Place a marker. */function marker(obj){/* Place an O. */if(turn==0){var o=document.createElement(%27div%27);o.style.boxSizing=%27border-box%27;o.style.position=%27absolute%27;o.style.top=%2710%%27;o.style.left=%2710%%27;o.style.height=%2780%%27;o.style.width=%2780%%27;/* Set O border size based on nested box level, because for some reason percentage isn%27t supported. */var inBOXES=0;for(var i=0;i<9;i++){if(obj==BOXES[i]){inBOXES=1;break;}}o.style.border=unit*(obj==board ? 9 : (inBOXES ? 3 : 1))/5+%27vmin solid black%27;o.style.borderRadius=%2750%%27;obj.appendChild(o);}/* Place an X. */else{var x1=document.createElement(%27div%27);x1.style.boxSizing=%27border-box%27;x1.style.background=%27black%27;x1.style.position=%27absolute%27;x1.style.top=%2710%%27;x1.style.left=%2740%%27;x1.style.height=%2780%%27;x1.style.width=%2720%%27;x1.style.transform=%27rotate(45deg)%27;obj.appendChild(x1);var x2=x1.cloneNode();x2.style.transform=%27rotate(-45deg)%27;obj.appendChild(x2);}/* Mark the map and disable the marked box. */obj.mark=turn;disable(obj);obj.style.pointerEvents=%27none%27;}/* Do stuff to a box upon click. */function pick(b){/* Mark box. */marker(b);/* Check victories. */check(boxes[b.macro]);check(BOXES);/* Pass turn to other player. */turn>0 ? turn=0 : turn=1;/* Enable next macro box if it isn%27t won. */if(BOXES[b.micro].mark==null){/* Disable all boxes. */for(i=0;i<9;i++){for(var j=0;j<9;j++){disable(boxes[i][j]);}}/* Enable next macro box. */for(i=0;i<9;i++){/* Forces won macro boxes to stay disabled. */if(board.mark==null){enable(boxes[b.micro][i]);}}}/* Enable all macro boxes if it%27s won. */else{for(i=0;i<9;i++){for(var j=0;j<9;j++){/* Forces won macro boxes to stay disabled. */if(board.mark==null){enable(boxes[i][j]);}}}}/* Forces won micro boxes to stay disabled. */disable(b);}/* Disables a box. */function disable(b){b.style.background=%27rgba(0,0,0,0.25)%27;b.setAttribute(%27onMouseOver%27,%27%27);b.setAttribute(%27onMouseOut%27,%27%27);b.setAttribute(%27onClick%27,%27%27);}/* Enables a box. */function enable(b){/* Forces won boxes to stay disabled. */if(b.mark==null){b.style.background=%27transparent%27;}b.setAttribute(%27onMouseOver%27,%27this.style.background=\%27rgba(0,0,0,0.25)\%27%27);b.setAttribute(%27onMouseOut%27,%27this.style.background=\%27transparent\%27%27);b.setAttribute(%27onClick%27,%27pick(this)%27);}">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Snake</button>
+        <div class="dropdown-content">
+          Lets you play snake in a popup window. It's pretty fun, but once you play there are certain elements in the
+          page you can't use anymore.
+          <a
+            href='javascript:Q=64;m=b=Q*Q;a=[P=l=u=d=p=S=w=0];u=89;f=(h=j=t=(b+Q)/2)-1;(B=(D=document).body).appendChild(x=D.createElement("p"));(X=x.style).position="fixed";X.left=X.top=0;X.background="#FFF";x.innerHTML="<p></p><canvas>";v=(s=x.childNodes)[0];(s=s[1]).width=s.height=5*Q;c=s.getContext("2d"); onkeydown=onblur=F=function(e,g){g?a[f]?(w+=m,f=Math.random(l+=8)*(R=Q-2)*R|(u=0),F(f+=Q+1+2*(f/R|0),g)):F(f):0>e?(l?--l:(y=t,t=a[t]-2,F(y)),S+=(w*=0.8)/4,m=999/(u++ +10),a[h+=[-1,-Q,1,Q][d=p]]?B.removeChild(x,alert("Game Over")):(F(h),F(e,j=h),v.innerHTML=P?(setTimeout(F,50,e,0),S|0):"Press P")):-e?(y=(a[e]=e<Q|e>=Q*Q-Q|!(e%Q)|e%Q==Q-1|2*(e==h))+(e==f),e==h&&(a[j]=2+h),c.fillStyle="hsl("+99*!a[e]+","+2*m+"%,"+50*y+"%)",c.fillRect(e%Q*5,5*(e/Q|0),5,5)):isNaN(y=e.keyCode-37)|43==y?(P=y&&!P)&&F(-1): p=!P|y&-4|!(y^2^d)?p:y;return!1};for(;--b;F(b));void F(-1);'>Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Autoclicker</button>
+        <div class="dropdown-content">
+          Prompts you to enter in the clicks per second (the lower the faster for some reason) and clicks wherever your
+          mouse is hovering.
+          <a
+            href="javascript:(function(x,y){if(!window.click){window.click=!0,document.body.style.cursor='crosshair';var cps=prompt('Autoclicker CPS: (Under 200 recommended)');if(!cps||isNaN(cps)?(alert(%27You entered something wrong. Try running the script again.%27),end()):alert(%27Autoclicker activated at %27+cps+%27 CPS! Do [ctrl+e] to stop.%27),addEventListener(%27mousemove%27,e=>{x=e.clientX,y=e.clientY}),addEventListener(%27keydown%27,e=>{%27e%27===e.key&&e.ctrlKey&&(alert(%27Autoclicker deactivated! Click the bookmark again to reactivate!%27),end())}),window.click)var int=setInterval(function(){var e=document.elementFromPoint(x,y);e&&e.click()},1e3/cps);function end(){clearInterval(int),window.click=!1,document.body.style.cursor=%27default%27}}})()">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">2048</button>
+        <div class="dropdown-content">
+          Lets you play 2048 in the bottom left corner of your screen. NOTE: the game will only appear if you hover over
+          it.
+          <a
+            href="javascript:(t=>{var s=document.createElement(t);s.type='text/java'+t;s.src='https://sheeptester.github.io/javascripts/2048.js';document.body.appendChild(s);})('script')">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Recolor</button>
+        <div class="dropdown-content">
+          Allows you to drag and drop colors to change the look of the page you're on.
+          <a
+            href="javascript:(function(){var el=document.createElement('script');el.type='text/javascript';el.src='https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js';el.onerror=function(){alert('Looks like the Content Security Policy directive is blocking the use of bookmarklets\n\nYou can copy and paste the content of:\n\n\'https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js\'\n\ninto your console instead\n\n(link is in console already)');console.log('https://rawgit.com/ApoorvSaxena/colordrop/master/dist/production.min.js');};document.getElementsByTagName('body')[0].appendChild(el);})();">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Calculator</button>
+        <div class="dropdown-content">
+          A very very useful calculator that opens in an alert. We do not condone cheating! Use this responsibly!
+          <a
+            href="javascript:(t=>{var s=document.creajavascript:expr=prompt('Formula...(eg:  2*3 + 7/8 )','');if(expr!=null){with(Math){evl=parseFloat(eval(expr))};if(isNaN(evl)){alert('Really are you kidding me? Enter in a number, not whatever that is!!%27)}else{alert(evl)}}else{void(null)}">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Simple Edit</button>
+        <div class="dropdown-content">
+          Allows you to edit text on the page. Hit ESC to exit edit mode.
+          <a
+            href="javascript:(function(){  document.designMode='on';  const s=document.createElement('style');  s.innerHTML=`body::before{content:'✏%EF%B8%8F Edit Mode (ESC to end)';z-index:64;padding:1em;background:white;color:black;display:block;margin:1em;font-size:30px;border:5px solid green;}`;  document.body.appendChild(s);  window.scrollTo(0,0);  document.addEventListener('keyup',e => {    if(e.key==='Escape'){      document.designMode='off';      s.remove();      document.removeEventListener('keyup',e);    }  });})();">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Cloak</button>
+        <div class="dropdown-content">
+          Changes the tab name and favicon to look like Google
+<a href="javascript:(function() {
+    var l = document.querySelector('link[rel*=\'icon\']') || document.createElement('link'); 
+    l.type = 'image/x-icon';
+    l.rel = 'shortcut icon';
+    l.href = 'https://google.com/favicon.ico';
+    document.getElementsByTagName('head')[0].appendChild(l);    
+    document.title = 'Google';
+})();">Code</a>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Proxify</button>
+        <div class="dropdown-content">
+          Opens whatever page you're on in an unblocked subLink page. (Made by us!)
+          <a
+            href="javascript:(function(){window.location.href='https://sublink.detoxnetwork.repl.co/uv/service/'+window.location.href;})();">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Developer Console</button>
+        <div class="dropdown-content">
+          Opens a developer console on the current page. Does not let you edit.
+          <a
+            href="javascript:(function()%7B(function() %7Bvar x %3D document.createElement('script')%3Bx.src %3D 'https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FSnowLord7%2Fdevconsole%40master%2Fmain.js'%3Bx.onload %3D alert('Loaded Developer Console!')%3Bdocument.head.appendChild(x)%3B%7D)()%7D)()">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Volume Manager</button>
+        <div class="dropdown-content">
+          Lets you increase the volume of videos or audio if it's too quiet right now.
+          <a
+            href="javascript:var g_6z; function cI_6z(){ var ctx_6z = new AudioContext(); var el_6z = document.querySelector('video') ? document.querySelector('video') : document.querySelector('audio')? document.querySelector('audio'):alert(%27Media DOM not exist. Aborting.%27); if (el_6z){ g_6z = ctx_6z.createGain(); g_6z.gain.value = 1; var src_6z = ctx_6z.createMediaElementSource(el_6z); src_6z.connect(g_6z).connect(ctx_6z.destination); var p = document.createElement('div'); p.innerHTML = `<div class=vpc_6z id=vpc_6z><style>.vpc_6z{float:right;width:25%;position:fixed;bottom:0;padding:20px 20px;z-index:9999999;background:#444;color:#fff}.vpc_6z-hide{position:fixed;background:#444;padding:0;width:80px;height:30px;bottom:0;z-index:999999}.vpi_6z-hide{display:none}</style><button onclick='d=document.getElementById('vpi_6z'),'vpi_6z'==d.getAttribute('class')?d.setAttribute('class','vpi_6z-hide'):d.setAttribute('class','vpi_6z'),c=document.getElementById('vpc_6z'),'vpc_6z'==c.getAttribute('class')?c.setAttribute('class','vpc_6z-hide'):c.setAttribute('class','vpc_6z')'style=float:right;cursor:pointer;width:80px;height:30px>Toggle VP</button><div class=vpi_6z id=vpi_6z><button onclick='document.getElementById('vpc_6z').remove()'>Destroy Panel</button><h1>Volume Gain: <span id=volumeControl_e></span></h1><input max=100 min=1 onchange='v=this.value,cG_6z(v),document.getElementById('volumeControl_e').innerHTML=1*v+100,console.log(v)'style=width:100% type=range value=1></div></div>%60; document.body.appendChild(p); } }; function cG_6z(v){ g_6z.gain.value = v; }; cI_6z(1);">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">Edpuzzle Skip</button>
+        <div class="dropdown-content">
+          Allows you to skip any edpuzzle video and will answer every multiple choice question for you. <b>USE AT YOUR OWN RISK.</b>
+          <a
+            href="javascript: fetch('https://cdn.jsdelivr.net/gh/ading2210/edpuzzle-answers@latest/script.js').then(r => r.text()).then(r => eval(r))">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="dropdown">
+        <button class="dropbtn">X-ray Goggles</button>
+        <div class="dropdown-content">
+          Lets you basically inspect on any page and change some content.
+          <a
+            href="javascript:(function () {var script=document.createElement('script');script.src='https://x-ray-goggles.mouse.org/webxray.js';script.className='webxray';script.setAttribute('data-lang','en-US');script.setAttribute('data-baseuri','https://x-ray-goggles.mouse.org');document.body.appendChild(script);}())">Code</a>
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+
+  <div class="column" id="right">
+    <img src="evade inverted.svg" alt="Evade Logo" id="img">
+    <h3><b>Evade</b> is a giant collection of bookmarklets to help you or just keep you entertained when there's nothing to do.
+      What are bookmarklets, you may ask? They're snippets of JavaScript code that are put into a bookmark, allowing you
+      to do anything from playing tic tac toe to opening a search engine in a tab. To use them, click on a button, and
+      if you like how that one sounds you can right click the link that says "code" and copy the link address. Once
+      you've done this, bookmark the page you're on and change the title to whatever you like. Then, hit edit and you
+      can paste the code into the URL tab. Otherwise, if you just want to test them first, click the <b>code</b> button and
+      they will run on the current page.</h3>
+  </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
